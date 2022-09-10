@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="imageslists/groceryicon.png" />
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Lato:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- font-awesome -->
+    <script
+      src="https://kit.fontawesome.com/20c5629a29.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- bootstrap css -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="main.css" />
+    <title>Grocery list</title>
+  </head>
+  <body>
+    <div class="bg-container">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="d-flex flex-row justify-content-center mb-5 mt-4 p-2">
+              <img src="imageslists/groceryicon.png" class="img-icon" />
+              <h1 class="G-heading">Grocery List</h1>
+            </div>
+            <h1 class="create-heading">
+              Create <span class="create-item-heading-subpart">Item</span>
+            </h1>
+            <input
+              type="text"
+              id="gUserInput"
+              class="G-user-input"
+              placeholder="Enter the grocery item"
+            />
+            <button class="add-button" id="addButton">Add</button>
+            <h1 class="G-items-heading">
+              My <span class="G-items-heading-subpart">Grocery List</span>
+            </h1>
+            <ul class="G-items-container" id="gItemsContainer"></ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- bootstrap js -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"
+    ></script>
+    <!-- js linked -->
+    <script src="main.js"></script>
+  </body>
+</html>
